@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1F3F4"
+    android:orientation="vertical"
+    tools:context=".activity.RemindActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="24dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/icon_wether"
+            android:layout_width="80dp"
+            android:layout_height="80dp">
+
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="When do you want to study?"
+            android:textColor="#0C0C0C"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="We will remind you to study every day!"
+            android:textColor="#858181"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        >
+
+        <NumberPicker
+            android:id="@+id/txtHours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+        <NumberPicker
+            android:id="@+id/txtMinute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="46dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bogocbutton"
+            android:inputType="text"
+            android:text="Done"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#F8F5F5"/>
+
+        <TextView
+            android:id="@+id/txtIgnore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:text="Ignore"
+            android:textColor="#858181"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:textAlignment="center"
+            android:text="You can change it in settings"
+            android:textColor="#0C0C0C"
+            android:textSize="12dp" />
+    </LinearLayout>
+</LinearLayout>

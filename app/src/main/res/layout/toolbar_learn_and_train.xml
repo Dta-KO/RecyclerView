@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#585560"
+    android:elevation="4dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="5dp"
+        android:text="X"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#0C0C0C"
+        android:gravity="center"/>
+    <ImageView
+        android:src="@drawable/icon_tim"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="40dp"
+        android:layout_gravity="center"/>
+    <ImageView
+        android:src="@drawable/icon_tim"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:src="@drawable/icon_tim"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center"/>
+
+</androidx.appcompat.widget.Toolbar>

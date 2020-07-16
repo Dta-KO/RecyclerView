@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/itemCourse"
+    android:padding="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/icon_tienganhcoban" />
+
+            <TextView
+                android:id="@+id/itemtxtTitle"
+                android:layout_width="314dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/itemImage"
+                android:layout_toRightOf="@+id/itemImage"
+                android:gravity="center_vertical"
+                android:text="Tiếng anh cơ bản"
+                android:textSize="17dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/itemtxtTotalWord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/itemtxtTitle"
+                android:layout_marginStart="14dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/itemImage"
+                android:layout_toRightOf="@+id/itemImage"
+                android:text="921 từ" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

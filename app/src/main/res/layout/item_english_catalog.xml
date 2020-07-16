@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/basicEnglishItemLayout"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/progressBar"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:src="@drawable/lv3"
+                android:textSize="35dp" />
+
+            <TextView
+                android:id="@+id/txtContentEnglishCatalog"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/progressBar"
+                android:text="Topic title"
+                android:textColor="#4e66ef"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtTotalWordEnglishCatalog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtContentEnglishCatalog"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/progressBar"
+                android:text="170 từ" />
+
+            <TextView
+                android:id="@+id/txtTitleEnglishCatalog"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_below="@+id/txtTotalWordEnglishCatalog"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/progressBar"
+                android:text="Tên khóa học"
+                android:textSize="14dp"
+                android:textStyle="italic" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

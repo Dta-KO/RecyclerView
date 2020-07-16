@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_flower"
+        android:layout_width="49dp"
+        android:layout_height="56dp"
+        android:layout_alignBottom="@id/tv_word"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:src="@drawable/icon_hoa" />
+
+    <TextView
+        android:id="@+id/tv_vietnamese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:text="Vietnamese"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_vietnamese"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:text="Con mèo"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+    <EditText
+        android:id="@+id/edt_writing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_word"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#F4DE7C"
+        android:gravity="center"
+        android:ems="20" />
+    <Button
+        android:id="@+id/btn_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_writing"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="#0CCC22"
+        android:text="COMPLETE"
+        android:textColor="#EFF6F0"
+        android:textStyle="bold"/>
+
+</RelativeLayout>

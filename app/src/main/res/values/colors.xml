@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_trans">#99FFFFFF</color>
+    <color name="black">#282727</color>
+    <color name="background_btn_luyentap">#E91427</color>
+    <color name="background_btn_luyentap_normal">#F6F6F6</color>
+    <color name="background_btn_luyentap_click">#FFAE00</color>
+    <color name="color_circle">#5583AD</color>
+    <color name="color_circle_thungay">#B2C0D1</color>
+</resources>

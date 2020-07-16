@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/heart1"
+        android:icon="@drawable/ic_favorite_red"
+        app:showAsAction="always"
+        android:title="heart1"/>
+    <item
+        android:id="@+id/heart2"
+        android:icon="@drawable/ic_favorite_red"
+        app:showAsAction="always"
+        android:title="heart2"/>
+    <item
+        android:id="@+id/heart3"
+        android:icon="@drawable/ic_favorite_red"
+        app:showAsAction="always"
+        android:title="heart3">
+    </item>
+    <item
+        app:showAsAction="always|withText"
+        android:title="120">
+    </item>
+
+</menu>

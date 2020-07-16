@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.WordListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="10dp"
+        android:background="@color/color_circle"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/tv_topic_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Animal topic"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Learned Words: 30/90"
+                android:textColor="#838383" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/topicWordRecyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="120dp"
+        tools:listitem="@layout/item_topic_word_list" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_add_black_24dp" />
+
+    <LinearLayout
+        android:id="@+id/actionGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:visibility="invisible"
+        android:padding="20dp"
+        app:layout_anchor="@id/fab"
+        app:layout_anchorGravity="right">
+
+
+        <Button
+            android:id="@+id/actionTraining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Learning and practice" />
+
+        <Button
+            android:id="@+id/actionFastLearning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fast learning" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
